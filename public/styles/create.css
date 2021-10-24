@@ -1,0 +1,91 @@
+main {
+    background-color: #1B1B1F;
+    color: #E1E1E6;
+
+    width: 60vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    margin-top: 60px;
+    overflow: auto;
+    height: 70vh;
+}
+
+input,
+button {
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    width: 40%;
+    min-width: 100px;
+
+    background-color: transparent;
+    color: #E1E1E6;
+
+    outline: none;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 30px;
+}
+
+small {
+    opacity: .8;
+    font-size: 17px;
+    word-spacing: 5px;
+}
+
+small span {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main div.nameGit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main div h2 {
+    text-align: start;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+main div.links div.link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin-top: 0;
+        width: 80vw;
+      
+    }
+
+    form {
+        padding: 20px;
+        margin-top: 500px;
+    }
+
+    input {
+        width: 70%;
+    }
+}

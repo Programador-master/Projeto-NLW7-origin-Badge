@@ -1,0 +1,55 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Badge - {{user.login}} </title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+{% endblock %}
+
+{% block content %}
+    <main>
+        
+        <div class="content">
+
+            <div class="avatar">
+                <img src="/img/build.svg" alt="Selo Rocketseat">
+                <img src="{{user.avatar_url}}" alt="Foto pessoal" class="imgGit">
+            </div>
+
+            <h1 class="nameUser">{{user.name}}</h1>
+
+            <a href="{{user.html_url}}" target="_blank" class="link github">
+
+                <img src="/img/github 2.svg" alt="Logo GitHub">
+                {{user.login}}
+
+            </a>
+        {% if user.bio %}
+            <p>{{user.bio}}</p>
+        {% endif %}
+
+            <div class="links">
+
+                <a href="https://www.youtube.com/c/{{link.you}}" class="link youtube" target="_blank">
+                    <img src="/img/youtube.svg" alt="Link youtube">
+                </a>
+                
+                <a href="https://www.instagram.com/{{link.inst}}" class="link instragram" target="_blank">
+                    <img src="/img/instragram.svg" alt="Link instragram">
+                </a>
+                
+                <a href="https://www.facebook.com/{{link.face}}" class="link facebook" target="_blank">
+                    <img src="/img/facebook.svg" alt="Link facebook">
+                </a>
+                
+                <a href="https://twitter.com/{{link.twit}}" class="link twitter" target="_blank">
+                    <img src="/img/twitter.svg" alt="Link twitter">
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+{% endblock %}
